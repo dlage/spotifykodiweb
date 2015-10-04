@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url('', include('social.apps.django_app.urls', namespace='social')),
     url('^accounts/profile/', views.accounts_profile, name='profile'),
+    url('^get_auth_url$', views.get_auth_url, name='get_auth_url'),
     url('^$', views.index, name='home'),
 ]
