@@ -1,12 +1,10 @@
 # Load defaults in order to then add/override with production-only settings
-from defaults import *
+from .defaults import *
 
 DEBUG = False
 
 # Secret keys
-SECRET_KEY = 'myPRDsecret'
-SOCIAL_AUTH_SPOTIFY_KEY = 'myPRDkey'
-SOCIAL_AUTH_SPOTIFY_SECRET = 'myPRDsecretSPOTIFY'
+
 ALLOWED_HOSTS = [
     'my-prd-host.example.com'
 ]

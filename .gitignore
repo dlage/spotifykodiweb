@@ -3,3 +3,5 @@ db.sqlite3
 __pycache__
 .idea/workspace.xml.idea/dataSources.ids
 .idea/dataSources.local.xml
+.idea/workspace.xml
+**/settings/secrets.py
