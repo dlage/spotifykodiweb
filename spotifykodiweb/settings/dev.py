@@ -1,8 +1,7 @@
 # Load defaults in order to then add/override with dev-only settings
-from defaults import *
+from .defaults import *
 
 DEBUG = True
-TEMPLATE_DEBUG = DEBUG
 
 # Secret keys
 SECRET_KEY = 'd)cf686tjw_m%_h+e#@ghzzkn3%#w^9&v#@^2gpvmj@e9ea8%^'
