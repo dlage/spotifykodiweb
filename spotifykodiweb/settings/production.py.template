@@ -1,0 +1,23 @@
+# Load defaults in order to then add/override with production-only settings
+from defaults import *
+
+DEBUG = False
+
+# Secret keys
+SECRET_KEY = 'myPRDsecret'
+SOCIAL_AUTH_SPOTIFY_KEY = 'myPRDkey'
+SOCIAL_AUTH_SPOTIFY_SECRET = 'myPRDsecretSPOTIFY'
+ALLOWED_HOSTS = [
+    'my-prd-host.example.com'
+]
+
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, '../../db.sqlite3'),
+        'USER': 'me',
+        'PASSWORD': 'i<3django',
+    }
+}
+"""
